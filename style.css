@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0b0b0f;
+  color: white;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,215,0,0.25);
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+  color: gold;
+}
+
+.logo span {
+  color: white;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: gold;
+}
+
+/* Active Link */
+.menu a.active {
+  color: gold;
+  font-weight: bold;
+  border-bottom: 2px solid gold;
+  padding-bottom: 4px;
+}
+/* Hire Button */
+.nav-btn {
+  background: gold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ✅ HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: radial-gradient(circle, rgba(255,215,0,0.15), transparent),
+              linear-gradient(to bottom, #000, #111);
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  color: gold;
+}
+
+.hero-content p {
+  margin-top: 15px;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Hero Button */
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: gold;
+  padding: 14px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.08);
+}
+
+/* ✅ SECTION */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.title {
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: gold;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Cards */
+.card, .project {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,215,0,0.25);
+  transition: 0.3s;
+}
+
+.card:hover, .project:hover {
+  transform: translateY(-8px);
+  border-color: gold;
+}
+
+/* Dark Section */
+.dark {
+  background: #050507;
+}
+
+/* CTA */
+.cta {
+  padding: 90px 20px;
+  text-align: center;
+  background: gold;
+  color: black;
+}
+
+.cta h2 {
+  font-size: 40px;
+}
+
+.cta p {
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: gray;
+}
+
+/* ✅ MOBILE FIX */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+}
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.flip-card {
+  width: 300px;
+  height: 180px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+/* Both Sides */
+.card-side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-side img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* BACK SIDE */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* Flip Class */
+.flip-card.flip {
+  transform: rotateY(180deg);
+}
