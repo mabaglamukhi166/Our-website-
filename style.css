@@ -142,6 +142,56 @@ body{
   margin-bottom:10px;
 }
 
+.baglamukhi-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.baglamukhi-box {
+  max-width: 800px;
+  text-align: center;
+
+  background: linear-gradient(135deg, #fff3c4, #ffe08a);
+  padding: 40px 30px;
+  border-radius: 25px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.baglamukhi-box h2 {
+  font-size: 32px;
+  color: #5a1e0c;
+  margin-bottom: 15px;
+}
+
+.baglamukhi-box p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.know-more-btn {
+  display: inline-block;
+  background: linear-gradient(to right, #d4a017, #ffcc00);
+
+  color: #000;
+  padding: 14px 25px;
+  font-weight: bold;
+
+  border-radius: 30px;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.know-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+
 /* CARDS */
 .cards{
   display:grid;
