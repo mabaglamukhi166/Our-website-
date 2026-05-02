@@ -195,6 +195,46 @@ body{
   border-radius:25px;
 }
 
+.seo-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.seo-box {
+  max-width: 900px;
+  background: linear-gradient(135deg, #fff8dc, #ffe8a3);
+  padding: 40px 30px;
+  border-radius: 25px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.seo-box h2 {
+  font-size: 28px;
+  color: #5a1e0c;
+  margin-bottom: 15px;
+}
+
+.seo-box p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .seo-box h2 {
+    font-size: 22px;
+  }
+
+  .seo-box p {
+    font-size: 15px;
+  }
+}
+
 /* TRUST */
 .trust{
   display:flex;
