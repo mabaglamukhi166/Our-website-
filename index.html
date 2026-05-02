@@ -7,6 +7,7 @@
 <title>Baglamukhi Havan Nalkheda | Book Pandit Ji</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.jpg"
 
 </head>
 
@@ -16,7 +17,7 @@
 
 <div class="logo-section">
 <img src="panditdp2.png" class="logo-img">
-<b>हेमराज शास्त्री</b>
+<b>पं. हेमराज शास्त्री </b>
 </div>
 
 <nav class="nav-links" id="navLinks">
@@ -29,6 +30,30 @@
 <button class="book-btn" onclick="book()">Book</button>
 
 </header>
+
+<!-- LANDSCAPE SLIDER -->
+<div class="land-slider">
+
+  <div class="land-slides">
+
+    <img src="temple.jpg" class="land-slide active"alt="Baglamukhi mandir Nalkheda">
+    <img src="maa.jpg" class="land-slide"alt="maa baglamukhi nalkheda">
+    <img src="poster.png" class="land-slide">
+
+  </div>
+
+  <!-- Buttons -->
+  <button class="land-prev">&#10094;</button>
+  <button class="land-next">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="land-dots">
+    <span class="land-dot active"></span>
+    <span class="land-dot"></span>
+    <span class="land-dot"></span>
+  </div>
+
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -84,7 +109,7 @@
 
 <h2>About Pandit Ji</h2>
 
-<img src="pandit2.jpg" class="pandit-img">
+<img src="pandit2.jpg" class="pandit-img" alt="maa baglamukhi pandit for havan ">
 
 <p>Experienced Pandit Ji with 10+ years of Vedic Havan & Puja expertise.</p>
 
@@ -115,6 +140,29 @@
 </div>
 
 </section>
+<!-- HAVAN INFO SECTION -->
+<section class="havan-info-section">
+
+  <div class="havan-info-box">
+
+    <h2>🔥 Aur Bhi Havan Upalabdh Hai 🔥</h2>
+
+      <p>
+  हमारे यहाँ केवल बगलामुखी हवन ही नहीं, बल्कि अनेक प्रकार के वैदिक हवन और अनुष्ठान विधि-विधान के साथ कराए जाते हैं। 
+  हर हवन का अपना अलग महत्व और लाभ होता है, जो आपकी समस्या और मनोकामना के अनुसार चुना जाता है।
+     <br><br>
+  चाहे आपको शांति चाहिए, सफलता प्राप्त करनी हो, शत्रु बाधा से मुक्ति चाहिए या जीवन की रुकावटों को दूर करना हो — 
+  हम आपको सही हवन का चयन करने में मार्गदर्शन देते हैं और पूर्ण विधि से अनुष्ठान करवाते हैं।
+    </p>
+    <p><b>⚡ हर व्यक्ति की समस्या अलग होती है — सही हवन का चयन बहुत जरूरी है।</b></p>
+
+    <a href="havan.html" class="havan-section-btn">
+      📿 Sabhi Havan ke Bare Me Jane
+    </a>
+
+  </div>
+
+</section>
 
 <!-- FLOAT BUTTON -->
 <a href="https://wa.me/919461469430" class="whatsapp-float">💬</a>
@@ -128,6 +176,39 @@ document.getElementById("navLinks").classList.toggle("active");
 function book(){
 window.open("https://wa.me/919461469430");
 }
+let landSlides = document.querySelectorAll(".land-slide");
+let landDots = document.querySelectorAll(".land-dot");
+let landIndex = 0;
+
+function showLandSlide(i){
+  landSlides.forEach(s => s.classList.remove("active"));
+  landDots.forEach(d => d.classList.remove("active"));
+
+  landSlides[i].classList.add("active");
+  landDots[i].classList.add("active");
+}
+
+function nextLand(){
+  landIndex = (landIndex + 1) % landSlides.length;
+  showLandSlide(landIndex);
+}
+
+function prevLand(){
+  landIndex = (landIndex - 1 + landSlides.length) % landSlides.length;
+  showLandSlide(landIndex);
+}
+
+document.querySelector(".land-next").onclick = nextLand;
+document.querySelector(".land-prev").onclick = prevLand;
+
+landDots.forEach((dot,i)=>{
+  dot.addEventListener("click", ()=>{
+    landIndex = i;
+    showLandSlide(i);
+  });
+});
+
+setInterval(nextLand,3000);
 </script>
 
 </body>
