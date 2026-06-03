@@ -75,6 +75,10 @@ margin-right:10px;
   height:60px;
   border-radius:50%;
 }
+.loader-logo{
+    width:120px;
+    animation:pulse 1.5s ease-in-out infinite;
+}
 
 .nav-links{
   display:flex;
