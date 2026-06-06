@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -16,9 +16,6 @@ content="Book Maa Baglamukhi Havan in Nalkheda with experienced Pandit Hemraj Sh
 </head>
 
 <body>
-<div id="loader">
-    <img src="icon.jpg" alt="Logo" class="loader-logo">
-</div>
 
 <header class="main-header">
 
@@ -31,7 +28,7 @@ content="Book Maa Baglamukhi Havan in Nalkheda with experienced Pandit Hemraj Sh
 <a href="#">Home</a>
 <a href="#about">About</a>
  <a href="maa-baglamukhi.html">About Maa</a>
- <a href="havan.html">About havan</a>
+ <a href="havn.html">About havan</a>
 <a href="nitya-darshan.html">Daily Darshan</a>
 <a href="blog.html">News & Blog</a>
 </nav>
@@ -65,6 +62,7 @@ content="Book Maa Baglamukhi Havan in Nalkheda with experienced Pandit Hemraj Sh
   <div class="seo-box">
 
     <h1>Baglamukhi Havan Booking in Nalkheda | Pandit Hemraj Shastri</h1>
+
     <p>
       If you are searching for Baglamukhi havan in Nalkheda, our experienced Pandit Ji provides authentic Vedic rituals 
       with proper mantras and samagri. This havan is especially recommended for enemy removal, court case success, business growth, and protection from negative energies.
@@ -76,6 +74,27 @@ content="Book Maa Baglamukhi Havan in Nalkheda with experienced Pandit Hemraj Sh
     <h2>Call: +91 9461469430</h2>
 
   </div>
+
+</section>
+<section class="pandit-card-section">
+
+<div class="flip-card" onclick="this.classList.toggle('flip')">
+
+    <!-- FRONT -->
+    <div class="flip-card-front">
+        <img src="frontp.png" alt="baglamukhi Pandit">
+    </div>
+
+    <!-- BACK -->
+    <div class="flip-card-back">
+        <img src="backp.png" alt="Baglamukhi pandit Contact Details">
+    </div>
+
+</div>
+
+<p class="flip-text">
+    👆 Card par click karke details dekhein
+</p>
 
 </section>
 
@@ -119,9 +138,7 @@ content="Book Maa Baglamukhi Havan in Nalkheda with experienced Pandit Hemraj Sh
       माँ बगलामुखी दस महाविद्याओं में से एक हैं, जिन्हें शत्रु विनाशिनी देवी कहा जाता है। 
       उनकी पूजा करने से शत्रु बाधा, कोर्ट केस, और नकारात्मक शक्तियों से मुक्ति मिलती है।
     </p>
-<p>
-Looking for Baglamukhi Havan Booking in Nalkheda? Pandit Hemraj Shastri provides authentic Vedic Baglamukhi Havan, Anushthan, Grah Shanti, Mahamrityunjaya Havan and other spiritual services at Maa Baglamukhi Temple Nalkheda.
-</p>
+    <p>Looking for Baglamukhi Havan Booking in Nalkheda? Pandit Hemraj Shastri provides authentic Vedic Baglamukhi Havan, Anushthan, Grah Shanti, Mahamrityunjaya Havan and other spiritual services at Maa Baglamukhi Temple Nalkheda.</p>
     <h2>Call: +91 9461469430</h2>
     <a href="maa-baglamukhi.html" class="know-more-btn">
       🔍 Maa Baglamukhi ke bare me aur jane
@@ -176,9 +193,7 @@ Know More
 
         <h2>Pandit hemraj shastri</h2>
  <h3>Call: +91 9461469430</h3>
- <p>Experienced Pandit Ji with 15+ years of Vedic Havan & Puja expertise.
-Pandit Hemraj Shastri is a respected Vedic priest from Nalkheda, Madhya Pradesh, known for performing Maa Baglamukhi Havan, Anushthan, Mahamrityunjaya Havan, Grah Shanti, and other sacred Vedic rituals. With deep knowledge of Sanatan traditions and years of spiritual experience, he has guided devotees from different parts of India in their religious and spiritual journeys. His rituals are performed according to authentic Vedic methods with devotion, discipline, and proper mantra chanting. Many devotees seek his guidance for spiritual protection, peace, prosperity, and successful completion of important life goals. Through dedicated service and faith in Maa Baglamukhi, Pandit Hemraj Shastri continues to help devotees connect with divine blessings and positive energy.
-</p>
+ <p>Experienced Pandit Ji with 10+ years of Vedic Havan & Puja expertise.Pandit Hemraj Shastri is a respected Vedic priest from Nalkheda, Madhya Pradesh, known for performing Maa Baglamukhi Havan, Anushthan, Mahamrityunjaya Havan, Grah Shanti, and other sacred Vedic rituals. With deep knowledge of Sanatan traditions and years of spiritual experience, he has guided devotees from different parts of India in their religious and spiritual journeys. His rituals are performed according to authentic Vedic methods with devotion, discipline, and proper mantra chanting. Many devotees seek his guidance for spiritual protection, peace, prosperity, and successful completion of important life goals. Through dedicated service and faith in Maa Baglamukhi, Pandit Hemraj Shastri continues to help devotees connect with divine blessings and positive energy.</p>
 <br>
     </div>
 
@@ -282,7 +297,6 @@ class="call-float">
 
 <!-- FLOAT BUTTON -->
 <a href="https://wa.me/919461469430" class="whatsapp-float">💬</a>
-
 <section class="faq-section">
 
 <h2>❓ Frequently Asked Questions</h2>
@@ -340,7 +354,25 @@ WhatsApp Booking
 <p>© 2026 All Rights Reserved</p>
 
 </footer>
+
 <!-- JS -->
+<script>
+
+window.addEventListener("scroll",function(){
+
+const card =
+document.getElementById("panditCard");
+
+if(window.scrollY > 150){
+    card.classList.add("flip");
+}else{
+    card.classList.remove("flip");
+}
+
+});
+
+</script>
+
 <script>
 function toggleMenu(){
 document.getElementById("navLinks").classList.toggle("active");
@@ -382,11 +414,6 @@ landDots.forEach((dot,i)=>{
 });
 
 setInterval(nextLand,3000);
-</script>
-<script>
-window.addEventListener("load", function(){
-    document.getElementById("loader").style.display = "none";
-});
 </script>
 
 </body>
