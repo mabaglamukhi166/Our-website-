@@ -17,10 +17,6 @@ content="Share your experience and blessings received through Maa Baglamukhi Puj
 
 <body>
 
-<div id="loader">
-    <img src="icon.jpg" alt="Logo" class="loader-logo">
-</div>
-
 <!-- HEADER -->
 
 <header class="main-header">
@@ -55,8 +51,6 @@ Book Now
 
 </header>
 
-<!-- HERO SECTION -->
-
 <section class="review-hero">
 
 <img src="ma3.jpg" class="hero-bg">
@@ -77,6 +71,8 @@ other devotees.
 </div>
 
 </section>
+  
+
 
 
 <!-- REVIEW FORM -->
@@ -188,7 +184,65 @@ Submit Review
 </div>
 
 </section>
+<div class="reviews-container">
 
+    <div class="review-card">
+        <img src="malea.png" class="review-avatar" alt="User">
+        <h3>Sonu bharti
+</h3>
+        <span class="review-city">Madhepura, bihar</span>
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p>"बहुत ही अच्छे हैं माँ के मंदिर के सभी पंडित जी"</p>
+    </div>
+
+    <div class="review-card">
+        <img src="malea.png" class="review-avatar" alt="User">
+        <h3>Vipin</h3>
+        <span class="review-city">indore</span>
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Abhi kuch karya or baaki hai wo bhi ma baglamukhi jaldi hi purn karen. Jay ma baglamukhi 🙏"</p>
+    </div>
+
+    <div class="review-card">
+        <img src="malea.png" class="review-avatar" alt="User">
+        <h3>Abhimanyu</h3>
+        <span class="review-city">gangtok</span>
+        <div class="review-stars">⭐⭐⭐⭐</div>
+        <p>"Fully satisfied with puja and havan"</p>
+    </div>
+
+</div>
+
+<div id="moreReviews" class="hidden-reviews" id="moreReviwes">
+
+    <div class="review-card">
+        <img src="malea.png" class="review-avatar" alt="User">
+        <h3>Rakesh Singh</h3>
+        <span class="review-city">Bhopal</span>
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Bahut santusht hu. Seva bahut achhi thi."</p>
+    </div>
+
+    <div class="review-card">
+        <img src="malea.png" class="review-avatar" alt="User">
+        <h3>Vijay Kumar</h3>
+        <span class="review-city">Jaipur</span>
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Baglamukhi Havan bahut shanti se sampann hua."</p>
+    </div>
+    <div class="review-card">
+        <img src="malea.png" class="review-avatar" alt="User">
+        <h3>Ajay prajapati</h3>
+        <span class="review-city">Chhapiheda</span>
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Hamara havan bilkul achhi tarah se sampan hua."</p>
+    </div>
+
+</div>
+
+<button class="review-btn" onclick="toggleReviews()" id="reviewButton">
+    See More Reviews
+</button>
 <!-- MAA BAGLAMUKHI SECTION -->
 
 <section class="baglamukhi-section">
@@ -299,12 +353,25 @@ window.open(
 
 }
 
-</script>
-<script>
-window.addEventListener("load", function(){
-    document.getElementById("loader").style.display = "none";
-    document.body.style.overflow = "auto";
-});
+function toggleReviews(){
+
+    let reviews=document.getElementById("moreReviews");
+    let button=document.getElementById("reviewButton");
+
+    if(reviews.style.display==="grid"){
+
+        reviews.style.display="none";
+        button.innerHTML="See More Reviews";
+
+    }else{
+
+        reviews.style.display="grid";
+        button.innerHTML="Show Less Reviews";
+
+    }
+
+}
+
 </script>
 
 </body>
