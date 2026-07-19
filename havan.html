@@ -1,331 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>All havans Details | Pandit Ji Nalkheda</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="icon.jpg" alt="maa baglamukhi mata ">
+    <meta charset="UTF-8">
+    <title>Havan & Anushthan | Navgrah Shanti | Rudrabhishek | Nalkheda</title>
+<meta name="description" content="Navgrah Shanti, Rudrabhishek, Griha Pravesh, Vivah Sanskar, Satyanarayan Katha aur sabhi Vedic Anushthan ki booking.">
+<meta name="keywords" content="Navgrah Shanti, Rudrabhishek, Griha Pravesh, Vivah Sanskar, Havan Booking, Vedic Puja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
-
-<div id="loader">
-    <img src="icon.jpg" alt="Logo" class="loader-logo">
+  <div class="progress-bar" id="progressBar"></div>
+<!-- ========= WEBSITE 2.0 HEADER ========= -->
+<header class="ios-header">
+<div class="ios-logo">
+<img src="panditdp2.png" alt="Pandit Hemraj">
+<div class="logo-text">
+<h3>पं. हेमराज शास्त्री</h3>
+<span>Nalkheda • Madhya Pradesh</span>
 </div>
-
-<!-- HEADER SAME -->
-<header class="main-header">
-
-<div class="logo-section">
-<img src="panditdp2.png" class="logo-img">
-<b>हेमराज शास्त्री</b>
 </div>
-
-<nav class="nav-links" id="navLinks">
+<nav class="desktop-nav">
 <a href="index.html">Home</a>
-<a href="#havan">Havan</a>
-<a href="maa-baglamukhi.html">About Maa</a>
- <a href="havn.html">About havan</a>
- <a href="nitya-darshan.html">Daily Darshan</a>
- <a href="blog.html">News & Blog</a>
+<a href="about.html">About</a>
+<a href="maa-baglamukhi.html">Maa</a>
+<a href="Nitya-darshan.html">Drashan</a>
+<a href="havan.html">Havan</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
 </nav>
-
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-<button class="book-btn" onclick="book()">Book</button>
-
+<button id="menuBtn">
+☰
+</button>
 </header>
-
-<!-- FEATURE IMAGE SECTION -->
-<section class="feature-image-section">
-
-  <div class="feature-image-box">
-
-    <img src="poster.png" alt="Pandit Ji Havan" class="feature-image">
-
-    <div class="image-overlay">
-      <h2>🔱 Pure Vedic Havan 🔱</h2>
-      <p>Havan is performed with experience and faith as per the rituals. </p>
-    </div>
-
-  </div>
-
+<!-- ========================================= -->
+<!-- iPhone Style Popup Menu -->
+<!-- ========================================= -->
+<div id="menuOverlay" class="menu-overlay"></div>
+<div id="iosPopup" class="ios-popup">
+<a href="index.html">🏠 Home</a>
+<a href="about.html">👤 About</a>
+<a href="maa-baglamukhi.html">🛕 Maa Baglamukhi</a>
+<a href="Nitya-darshan.html">🏵️ Drashan</a>
+<a href="havan.html">🔥 Havan</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="contact.html">📞 Contact</a>
+</div>
+<!-- ========= MOBILE MENU ========= -->
+<div id="pageLoader">
+<div class="loaderGlass">
+<img src="icon.jpg" class="loaderLogo">
+</div>
+</div>
+<div class="ios-menu" id="iosMenu">
+<a href="index.html">🏠 Home</a>
+<a href="about.html">👤 About</a>
+<a href="maa-baglamukhi.html">🔱 Maa Baglamukhi</a>
+<a href="Nitya-darshan.html">🏵️ Drashan</a>
+<a href="havan.html">🔥 Havan</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="contact.html">☎ Contact</a>
+</div>
+<!-- ========================================= -->
+<!-- HAVAN HERO SECTION START -->
+<!-- ========================================= -->
+<section class="havan-hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<span class="hero-badge">
+🔥 Vedic Rituals
+</span>
+<h1>
+वैदिक हवन एवं<br>अनुष्ठान सेवाएँ
+</h1>
+<p>
+वैदिक परंपरा के अनुसार अनुभवी आचार्य द्वारा सभी प्रकार के
+हवन एवं धार्मिक अनुष्ठान सम्पूर्ण विधि-विधान से सम्पन्न कराए जाते हैं।
+</p>
+<div class="hero-buttons">
+<a href="#services" class="glass-btn">
+🪔 सेवाएँ देखें
+</a>
+<a href="contact.html" class="glass-btn-outline">
+📞 बुकिंग करें
+</a>
+</div>
+</div>
 </section>
-
-<!-- HAVAN DETAILS -->
-<section class="section" id="havan">
-
-<h2>🔥 Types of havans 🔥</h2>
+<!-- ========================================= -->
+<!-- SERVICES SECTION -->
+<!-- ========================================= -->
+<section class="service-list" id="services">
+<div class="section-head">
+<span>🕉 Our Services</span>
+<h2>मुख्य धार्मिक अनुष्ठान</h2>
 <p>
-We perform various types of Vedic Havans with proper rituals and traditional procedures.
-Each Havan is conducted for a specific purpose and is believed to help overcome different challenges in life while bringing peace, prosperity, and spiritual growth.
-</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>🔱 Baglamukhi Havan</h3>
-<p>
-Highly effective for protection from enemies, success in court cases, and removal of negative energies.
+आप अपनी आवश्यकता अनुसार निम्न सेवाओं के लिए बुकिंग कर सकते हैं।
 </p>
 </div>
-
-<div class="card">
-<h3>🔥 Mahamrityunjaya Havan</h3>
+<div class="service-grid">
+<div class="service-card">
+<div class="service-icon">🛡️</div>
+<h3>नवग्रह शांति</h3>
 <p>
-Performed for good health, longevity, protection, and relief from serious illnesses.
+ग्रह दोष शांति एवं सकारात्मक ऊर्जा के लिए वैदिक पूजा।
 </p>
+<a href="#navgrah">अधिक जानें →</a>
 </div>
-
-<div class="card">
-<h3>🏠 Griha Shanti Havan</h3>
+<div class="service-card">
+<div class="service-icon">🔱</div>
+<h3>रुद्राभिषेक</h3>
 <p>
-Conducted to bring peace, harmony, happiness, and positive energy into the home.
+भगवान शिव की विशेष पूजा एवं अभिषेक।
 </p>
+<a href="#rudrabhishek">अधिक जानें →</a>
 </div>
-
-<div class="card">
-<h3>💰 Lakshmi Havan</h3>
+<div class="service-card">
+<div class="service-icon">🏠</div>
+<h3>गृह प्रवेश</h3>
 <p>
-Specially performed for wealth, prosperity, financial growth, and business success.
+नए घर में सुख-शांति हेतु वैदिक पूजा।
 </p>
+<a href="#grihapravesh">अधिक जानें →</a>
 </div>
-
-<div class="card">
-<h3>🛕 Navagraha Shanti Havan</h3>
+<div class="service-card">
+<div class="service-icon">💍</div>
+<h3>विवाह संस्कार</h3>
 <p>
-Performed to reduce the effects of planetary doshas and astrological challenges.
+वैदिक रीति-रिवाजों के साथ विवाह सम्पन्न।
 </p>
+<a href="#vivah">अधिक जानें →</a>
 </div>
-
-<div class="card">
-<h3>⚡ Special Rituals & Anushthan</h3>
-<p>
-Customized havans and spiritual rituals performed according to your personal needs and concerns.
-</p>
 </div>
-
-</div>
-
 </section>
-
-<!-- BENEFITS -->
-
-<section class="havan-info-section">
-
-<div class="havan-info-box">
-
-<h2>✨ Benefits of Havan ✨</h2>
-
+<!-- ========================================= -->
+<!-- HAVAN PAGE PART 1 END -->
+<!-- ========================================= -->
+<!-- NAVGRAH SHANTI START -->
+<!-- ========================================= -->
+<section class="service-details" id="navgrah">
+<div class="service-image">
+<img src="navgrah.png" alt="Navgrah Shanti">
+</div>
+<div class="service-content">
+<span>🪐 विशेष अनुष्ठान</span>
+<h2>नवग्रह शांति पूजा</h2>
 <p>
-Performing a Havan helps purify the environment, remove negative energies, and bring positive changes into life.
-It is believed to promote mental peace, confidence, success, and spiritual well-being.
+नवग्रह शांति पूजा का उद्देश्य जीवन में ग्रहों के अशुभ प्रभाव को कम करना तथा सकारात्मक ऊर्जा, सुख-समृद्धि एवं मानसिक शांति की प्राप्ति करना है।
 </p>
-
 <p>
-<b>⚡ The right Havan can bring positive transformation to your life.</b>
+यह पूजा जन्म कुंडली में ग्रह दोष, शनि दोष, राहु-केतु दोष अथवा अन्य ग्रह संबंधी बाधाओं के लिए वैदिक विधि से सम्पन्न की जाती है।
 </p>
-
-<a href="https://wa.me/919461469430" class="havan-section-btn">
-📲 Book a Havan
+<div class="service-features">
+<div class="feature-box">
+✅ वैदिक मंत्रोच्चार
+</div>
+<div class="feature-box">
+🪔 पूर्ण विधि-विधान
+</div>
+<div class="feature-box">
+📿 अनुभवी आचार्य
+</div>
+<div class="feature-box">
+🙏 व्यक्तिगत संकल्प
+</div>
+</div>
+<a href="contact.html" class="glass-btn">
+📞 नवग्रह शांति बुक करें
 </a>
-
 </div>
-
 </section>
-
-</div>
-
-</section>
-</section>
-<section class="quick-links-section">
-<div class="review-cta">
-
-<h3>🙏 Received Maa Baglamukhi's Blessings?</h3>
-
+<!-- ========================================= -->
+<!-- NAVGRAH SHANTI END -->
+<!-- ========================================= -->
+<!-- RUDRABHISHEK START -->
+<!-- ========================================= -->
+<section class="service-details reverse" id="rudrabhishek">
+<div class="service-content">
+<span>🔱 भगवान शिव की कृपा</span>
+<h2>रुद्राभिषेक</h2>
 <p>
-Share your experience and help other devotees.
+रुद्राभिषेक भगवान शिव की अत्यंत प्रभावशाली वैदिक पूजा मानी जाती है। यह पूजा जीवन में शांति, स्वास्थ्य, समृद्धि एवं आध्यात्मिक उन्नति के लिए की जाती है।
 </p>
-
-<a href="reviews.html" class="review-btn">
-⭐ Leave a Review
-</a>
-
-</div>
-<h2>🔱 Explore More 🔱</h2>
-
-<div class="quick-links">
-
-<a href="nitya-darshan.html" class="quick-btn">
-📸 Daily Darshan
-</a>
-
-<a href="blog.html" class="quick-btn">
-📰 News & Blog
-</a>
-
-
-
-<a href="maa-baglamukhi.html" class="quick-btn">
-🙏 About Maa Baglamukhi
-</a>
-
-<a href="#about" class="quick-btn">
-👨‍🏫 About Pandit Ji
-</a>
-
-<a href="contact.html" class="quick-btn">
-📞 Contact Us
-</a>
-
-</div>
-
-</section>
-
-<!-- FLOAT BUTTON -->
-<a href="https://wa.me/919461469430" class="whatsapp-float">💬</a>
-<div class="divine-faq-wrapper" style="max-width: 900px; margin: 40px auto; padding: 20px; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
-    
-    <div class="faq-header" style="text-align: center; margin-bottom: 35px;">
-        <span style="color: #ffb300; font-size: 24px;">🔱</span>
-        <h2 style="color: #1a237e; font-size: 28px; margin: 10px 0 5px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Frequently Asked Questions</h2>
-        <p style="color: #666; font-size: 15px; margin-out: 0;">Find answers to common queries regarding Vedic rituals, problem resolutions, and online havan booking at Nalkheda Siddha Peeth.</p>
-        <div style="height: 3px; width: 80px; background: #ffb300; margin: 15px auto 0 auto; border-radius: 2px;"></div>
-    </div>
-
-    <div class="faq-container">
-        
-        <div class="faq-card" style="background: #ffffff; border: 1px solid #e0e0e0; border-left: 5px solid #ffb300; border-radius: 6px; padding: 22px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-            <h3 style="color: #1a237e; font-size: 18px; margin-top: 0; margin-bottom: 12px; font-weight: 600; line-height: 1.4;">
-                Which havan is best for winning a court case or resolving legal disputes?
-            </h3>
-            <p style="color: #444; font-size: 15px; line-height: 1.6; margin: 0;">
-                The <strong>Maa Baglamukhi Havan</strong> is globally renowned as the most powerful Vedic ritual for gaining victory in court cases, ongoing litigation, property disputes, and false accusations. Maa Baglamukhi, the 8th Mahavidya, controls the speech and mind of opponents (Stambhana), effectively neutralizing their hostile intentions. Performing this special anushthan at the Nalkheda Siddha Peeth through Pandit Hemraj Shastri ensures swift relief and legal justice.
-            </p>
-        </div>
-
-        <div class="faq-card" style="background: #ffffff; border: 1px solid #e0e0e0; border-left: 5px solid #ffb300; border-radius: 6px; padding: 22px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-            <h3 style="color: #1a237e; font-size: 18px; margin-top: 0; margin-bottom: 12px; font-weight: 600; line-height: 1.4;">
-                How can I get rid of hidden enemies, business rivalry, and negative energy?
-            </h3>
-            <p style="color: #444; font-size: 15px; line-height: 1.6; margin: 0;">
-                If you are facing intense business rivalry, jealousy, evil eye (Nazar Dosh), or constant setbacks caused by hidden enemies, the <strong>Baglamukhi Shatru Nashak Havan</strong> is highly recommended. It acts as an impenetrable spiritual shield that protects your family and career from black magic, evil energies, and malicious plots. The vibrations generated from the authentic mantra chanting completely purify your aura and bring positivity.
-            </p>
-        </div>
-
-        <div class="faq-card" style="background: #ffffff; border: 1px solid #e0e0e0; border-left: 5px solid #ffb300; border-radius: 6px; padding: 22px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-            <h3 style="color: #1a237e; font-size: 18px; margin-top: 0; margin-bottom: 12px; font-weight: 600; line-height: 1.4;">
-                Which ritual should be performed to eliminate family disputes and bring domestic peace?
-            </h3>
-            <p style="color: #444; font-size: 15px; line-height: 1.6; margin: 0;">
-                To eliminate constant family friction, financial instability, and domestic stress, a comprehensive <strong>Grahashanti Havan (Navgrah Shanti Puja)</strong> is essential. Malefic planetary placements (like Shani Sade Sati, Rahu-Ketu Mahadasha, or Mangal Dosh) often cause internal chaos. Performing a Grahashanti ritual balances the planetary energies, dissolves ancestral blockages (Pitri Dosh), and restores harmony, wealth, and mental peace in your household.
-            </p>
-        </div>
-
-        <div class="faq-card" style="background: #ffffff; border: 1px solid #e0e0e0; border-left: 5px solid #ffb300; border-radius: 6px; padding: 22px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-            <h3 style="color: #1a237e; font-size: 18px; margin-top: 0; margin-bottom: 12px; font-weight: 600; line-height: 1.4;">
-                Is it possible to book an online Baglamukhi Havan if I cannot visit Nalkheda personally?
-            </h3>
-            <p style="color: #444; font-size: 15px; line-height: 1.6; margin: 0;">
-                Yes, absolutely. For devotees residing across India or abroad who cannot visit the Maa Baglamukhi Temple in Nalkheda (Madhya Pradesh) due to health or distance, Pandit Hemraj Shastri offers an authentic <strong>Online Havan Booking service</strong>. The ritual is performed seamlessly by taking your specific name, gotra, and birth details via a Sankalp ritual. Devotees can join the live streaming or receive a complete video recording of the puja along with the divine prasad sent via post.
-            </p>
-        </div>
-
-        <div class="faq-card" style="background: #ffffff; border: 1px solid #e0e0e0; border-left: 5px solid #ffb300; border-radius: 6px; padding: 22px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-            <h3 style="color: #1a237e; font-size: 18px; margin-top: 0; margin-bottom: 12px; font-weight: 600; line-height: 1.4;">
-                What is included in the Baglamukhi Havan booking cost and duration?
-            </h3>
-            <p style="color: #444; font-size: 15px; line-height: 1.6; margin: 0;">
-                Our Vedic puja services are completely transparent. The havan package includes premium, pure Vedic samagri (including special yellow mustard, turmeric roots, and lotus seeds essential for Maa Baglamukhi), temple arrangements, and dakshina for the priests. Depending on the complexity of your problem (Samanya, Vishesh, or Maha-Vishesh Anushthan), the duration ranges from 45 minutes to 2 hours. You can directly contact the <strong>best pandit in Nalkheda</strong> at +91 9461469430 for custom consultation.
-            </p>
-        </div>
-
-    </div>
-</div>
-
-<footer>
-
-<h3>🔱 Pandit Hemraj Shastri 🔱</h3>
-
-<p>Serving Devotees Across India 🇮🇳</p>
-
-<p>📞 +91 9461469430</p>
-
 <p>
-<a href="https://wa.me/919461469430">
-WhatsApp Booking
-</a>
+महामृत्युंजय मंत्र एवं रुद्रसूक्त के वैदिक उच्चारण के साथ अभिषेक सम्पन्न किया जाता है, जिससे भक्तों को मानसिक शांति एवं सकारात्मक ऊर्जा प्राप्त होती है।
 </p>
-
-<p>© 2026 All Rights Reserved</p>
-
+<h3>📿 कब कराया जाता है?</h3>
+<div class="service-features">
+<div class="feature-box">🕉️ सावन माह</div>
+<div class="feature-box">🌙 सोमवार</div>
+<div class="feature-box">🎂 जन्मदिवस</div>
+<div class="feature-box">🙏 विशेष संकल्प</div>
+</div>
+<h3>✨ मुख्य लाभ</h3>
+<div class="service-features">
+<div class="feature-box">✔️ मानसिक शांति</div>
+<div class="feature-box">✔️ सकारात्मक ऊर्जा</div>
+<div class="feature-box">✔️ आध्यात्मिक उन्नति</div>
+<div class="feature-box">✔️ भगवान शिव का आशीर्वाद</div>
+</div>
+<a href="contact.html" class="glass-btn">
+📞 रुद्राभिषेक बुक करें
+</a>
+</div>
+<div class="service-image">
+<img src="rudrabhishek.png" alt="Rudrabhishek">
+</div>
+</section>
+<!-- ========================================= -->
+<!-- RUDRABHISHEK END -->
+<!-- SERVICE NAVIGATION START -->
+<!-- ========================================= -->
+<section class="service-nav">
+<div class="service-nav-container">
+<a href="#navgrah">🪐 Navgrah</a>
+<a href="#rudrabhishek">🔱 Rudrabhishek</a>
+<a href="#durga">🌺 Durga Path</a>
+<a href="#mahamrityunjaya">☘️ Mrityunjaya</a>
+<a href="maa-baglamukhi.html">🛕 Baglamukhi</a>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- SERVICE NAVIGATION END -->
+<div class="float-buttons">
+<a href="https://wa.me/9111557553" class="float-btn whatsapp-btn">
+<img src="whatsap.png" alt="">
+</a>
+<a href="tel:+9111557553" class="float-btn call-btn-float">
+<img src="phone.png" alt="">
+</a>
+<a href="#" id="topBtn" class="float-btn top-btn">
+<img src="uparrow.png" alt="">
+</a>
+</div>
+<footer class="footer-glass">
+<div class="footer-container">
+<div class="footer-box">
+<h3>पं. हेमराज शास्त्री</h3>
+<p>माँ बगलामुखी धाम, नलखेड़ा</p>
+<p>वैदिक पूजा, हवन एवं अनुष्ठान</p>
+</div>
+<div class="footer-box">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="maa-baglamukhi.html">Maa Baglamukhi</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-box">
+<h3>Contact</h3>
+<p>📞 +91 9165371880</p>
+<p>📞 +91 9111557553</p>
+<p>📍 Nalkheda, Madhya Pradesh</p>
+<div class="footer-social">
+<a href="#"><img src="facebook.png"></a>
+<a href="#"><img src="instagram.jpg"></a>
+<a href="#"><img src="youtube.png"></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+© 2026 Pandit Hemraj Shastri • Website 2.0
+</div>
 </footer>
-<!-- JS -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which havan is best for winning a court case or resolving legal disputes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Maa Baglamukhi Havan is globally renowned as the most powerful Vedic ritual for gaining victory in court cases, ongoing litigation, property disputes, and false accusations. Maa Baglamukhi, the 8th Mahavidya, controls the speech and mind of opponents, effectively neutralizing their hostile intentions. Performing this special anushthan at the Nalkheda Siddha Peeth through Pandit Hemraj Shastri ensures swift relief and legal justice."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I get rid of hidden enemies, business rivalry, and negative energy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you are facing intense business rivalry, jealousy, evil eye (Nazar Dosh), or constant setbacks caused by hidden enemies, the Baglamukhi Shatru Nashak Havan is highly recommended. It acts as an impenetrable spiritual shield that protects your family and career from black magic, evil energies, and malicious plots. The vibrations generated from the authentic mantra chanting completely purify your aura."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which ritual should be performed to eliminate family disputes and bring domestic peace?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "To eliminate constant family friction, financial instability, and domestic stress, a comprehensive Grahashanti Havan (Navgrah Shanti Puja) is essential. Malefic planetary placements (like Shani Sade Sati, Rahu-Ketu Mahadasha, or Mangal Dosh) often cause internal chaos. Performing a Grahashanti ritual balances the planetary energies, dissolves ancestral blockages, and restores harmony."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it possible to book an online Baglamukhi Havan if I cannot visit Nalkheda personally?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, absolutely. For devotees residing across India or abroad who cannot visit the Maa Baglamukhi Temple in Nalkheda personally, Pandit Hemraj Shastri offers an authentic Online Havan Booking service. The ritual is performed by taking your specific name, gotra, and birth details via a Sankalp ritual with live streaming or video recording options."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is included in the Baglamukhi Havan booking cost and duration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Vedic puja services include premium, pure Vedic samagri (yellow mustard, turmeric roots, etc.), temple arrangements, and dakshina for the priests. Depending on the complexity of your problem (Samanya, Vishesh, or Maha-Vishesh Anushthan), the duration ranges from 45 minutes to 2 hours. You can directly contact the best pandit in Nalkheda at +91 9461469430."
-      }
-    }
-  ]
-}
-</script>
-<script>
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("active");
-}
-
-function book(){
-window.open("https://wa.me/919461469430");
-}
-</script>
-<script>
-window.addEventListener("load", function(){
-    document.getElementById("loader").style.display = "none";
-});
-</script>
-
+<script src="nko.js"></script>
 </body>
 </html>
