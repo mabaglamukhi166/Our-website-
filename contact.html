@@ -1,318 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact Pandit Hemraj Shastri | Baglamukhi Havan Nalkheda</title>
-
-<meta name="description"
-content="Contact Pandit Hemraj Shastri for Baglamukhi Havan, Anushthan, Grah Shanti and Vedic rituals in Nalkheda. Call or WhatsApp for booking and guidance.">
-
-<meta name="keywords"
-content="Pandit Hemraj Shastri Contact Number, Nalkheda Pandit, Baglamukhi Havan Booking, Nalkheda Baglamukhi Pandit, Maa Baglamukhi Havan">
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <title>Contact Pandit Hemraj Shastri | Book Havan & Puja</title>
+<meta name="description" content="Pandit Hemraj Shastri se sampark karein. Maa Baglamukhi Havan, Rudrabhishek aur sabhi Vedic Puja ki booking WhatsApp ya Call se karein.">
+<meta name="keywords" content="Contact Pandit Hemraj, Havan Booking, Puja Booking, Nalkheda Pandit Contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-
-<header class="main-header">
-
-<div class="logo-section">
-<img src="panditdp2.png" class="logo-img">
-<b>पं. हेमराज शास्त्री</b>
+  <div class="progress-bar" id="progressBar"></div>
+<!-- ========= WEBSITE 2.0 HEADER ========= -->
+<header class="ios-header">
+<div class="ios-logo">
+<img src="panditdp2.png" alt="Pandit Hemraj">
+<div class="logo-text">
+<h3>पं. हेमराज शास्त्री</h3>
+<span>Nalkheda • Madhya Pradesh</span>
 </div>
-
-<nav class="nav-links" id="navLinks">
+</div>
+<nav class="desktop-nav">
 <a href="index.html">Home</a>
-<a href="maa-baglamukhi.html">About Maa</a>
+<a href="about.html">About</a>
+<a href="maa-baglamukhi.html">Maa</a>
+<a href="Nitya-darshan.html">Drashan</a>
 <a href="havan.html">Havan</a>
-<a href="nitya-darshan.html">Daily Darshan</a>
-<a href="blog.html">News & Blog</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
 </nav>
-
-<div class="menu-toggle"
-onclick="toggleMenu()">
+<button id="menuBtn">
 ☰
-</div>
-<button class="book-btn"
-onclick="book()">
-Book Now
 </button>
-
 </header>
-<section class="maa-image-section">
-<img src="ma.jpg"
-alt="Maa Baglamukhi"
-class="maa-image">
-
-<div class="maa-image-content">
-
-<h2>📞 Contact Pandit Ji</h2>
-
+<!-- ========================================= -->
+<!-- iPhone Style Popup Menu -->
+<!-- ========================================= -->
+<div id="menuOverlay"></div>
+<div id="iosPopup" class="ios-popup">
+<a href="index.html">🏠 Home</a>
+<a href="about.html">👤 About</a>
+<a href="maa-baglamukhi.html">🛕 Maa Baglamukhi</a>
+<a href="Nitya-darshan.html">🏵️ Drashan</a>
+<a href="havan.html">🔥 Havan</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="contact.html">📞 Contact</a>
+</div>
+<!-- ========= MOBILE MENU ========= -->
+<div id="pageLoader">
+<div class="loaderGlass">
+<img src="icon.jpg" class="loaderLogo">
+</div>
+</div>
+<div class="ios-menu" id="iosMenu">
+<a href="index.html">🏠 Home</a>
+<a href="about.html">👤 About</a>
+<a href="maa-baglamukhi.html">🔱 Maa Baglamukhi</a>
+<a href="Nitya-darshan.html">🏵️ Drashan</a>
+<a href="havan.html">🔥 Havan</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="contact.html">☎ Contact</a>
+</div>
+<!-- ========================================= -->
+<!-- CONTACT HERO -->
+<!-- ========================================= -->
+<section class="contact-hero">
+<div class="contact-overlay"></div>
+<div class="contact-content">
+<span class="hero-badge">
+📞 Contact Us
+</span>
+<h1>संपर्क करें</h1>
 <p>
-For Havan Booking, Anushthan and Spiritual Guidance
+पूजा, हवन, अनुष्ठान एवं धार्मिक परामर्श के लिए
+सीधे पं. हेमराज शास्त्री जी से संपर्क करें।
 </p>
-
+<div class="contact-hero-buttons">
+<a href="tel:+919111557553" class="hero-call-btn">
+📞 Call Now
+</a>
+<a href="https://wa.me/919111557553" class="hero-whatsapp-btn">
+💬 WhatsApp
+</a>
 </div>
-
+</div>
 </section>
-
-<section class="section">
-
-<h1>Contact Pandit Hemraj Shastri</h1>
-
-<p>
-
-Pandit Hemraj Shastri Ji is a trusted Vedic priest from Nalkheda who performs Maa Baglamukhi Havan, Mahamrityunjaya Havan, Grah Shanti Havan and other sacred rituals according to traditional Vedic methods.
-
-</p>
-
-</section>
-<section class="pandit-card-section">
-
-<div class="flip-card" onclick="this.classList.toggle('flip')">
-
-    <!-- FRONT -->
-    <div class="flip-card-front">
-        <img src="frontp.png" alt="baglamukhi Pandit">
-    </div>
-
-    <!-- BACK -->
-    <div class="flip-card-back">
-        <img src="backp.png" alt="Baglamukhi pandit Contact Details">
-    </div>
-
+<!-- ========================================= -->
+<!-- CONTACT CARDS -->
+<!-- ========================================= -->
+<section class="contact-info">
+<div class="contact-card">
+<div class="contact-icon">📞</div>
+<h3>Call Us</h3>
+<p>सीधे पंडित जी से बात करें</p>
+<a href="tel:+919165371880">
++91 9165371880
+</a>
+<a href="tel:+919111557553">
++91 9111557553
+</a>
 </div>
-
-<p class="flip-text">
-    👆 Card par click karke details dekhein
-</p>
-
-</section>
-
-
-
-<section class="trust">
-
-<div class="trust-box">
-📞 Direct Contact
-</div>
-
-<div class="trust-box">
-🛕 Nalkheda Specialist
-</div>
-
-<div class="trust-box">
-⭐ Trusted By Devotees
-</div>
-
-</section>
-
-<section class="seo-section">
-
-<div class="seo-box">
-  <section class="contact-details-section">
-
-<h2>🔱 Contact Details 🔱</h2>
-
-<div class="contact-grid">
-
-<div class="contact-box">
-<h3>📞 Call Us</h3>
-<p>+91 9461469430</p>
-</div>
-
-<div class="contact-box">
-<h3>💬 WhatsApp</h3>
-<p>Available for Booking & Guidance</p>
-<a href="https://wa.me/919461469430" class="contact-link">
+<div class="contact-card">
+<div class="contact-icon">💬</div>
+<h3>WhatsApp</h3>
+<p>बुकिंग एवं जानकारी</p>
+<a href="https://wa.me/919165371880">
 Chat on WhatsApp
 </a>
 </div>
-
-<div class="contact-box">
-<h3>📍 Location</h3>
+<div class="contact-card">
+<div class="contact-icon">📍</div>
+<h3>Address</h3>
 <p>
-Near Maa Baglamukhi Temple,<br>
+Maa Baglamukhi Dham<br>
 Nalkheda, Madhya Pradesh
 </p>
 </div>
-
+</section>
+<!-- ========================================= -->
+<!-- BOOKING SECTION -->
+<!-- ========================================= -->
+<section class="booking-section">
+<div class="booking-container">
+<!-- Booking Form -->
+<div class="booking-form">
+<h2>📝 Booking Request</h2>
+<p>
+अपनी पूजा, हवन या अनुष्ठान की जानकारी भेजें।
+</p>
+<form id="bookingForm">
+<input type="text" id="name" placeholder="पूरा नाम" required>
+<input type="tel" id="phone" placeholder="मोबाइल नंबर" required>
+<input type="text" id="city" placeholder="शहर / गाँव">
+<select id="service" required>
+<option selected disabled>अनुष्ठान चुनें</option>
+<option>माँ बगलामुखी पूजा</option>
+<option>नवग्रह शांति</option>
+<option>रुद्राभिषेक</option>
+<option>गृह प्रवेश</option>
+<option>विवाह संस्कार</option>
+<option>अन्य</option>
+</select>
+<textarea rows="5" id="message" placeholder="अपना संदेश लिखें..."></textarea>
+<button type="submit">
+📩 Booking Request
+</button>
+</form>
+</div>
+<!-- Google Map -->
+<div class="booking-map">
+<h2>📍 हमारा स्थान</h2>
+<iframe
+src="https://www.google.com/maps?q=Nalkheda,Madhya%20Pradesh&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
+</div>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- BUSINESS HOURS + FAQ + EMERGENCY -->
+<!-- ========================================= -->
+<section class="contact-extra">
+<div class="contact-extra-container">
+<!-- ========================= -->
+<!-- BUSINESS HOURS -->
+<!-- ========================= -->
 <div class="contact-box">
-<h3>🕉 Services</h3>
+<h2>🕒 Business Hours</h2>
+<div class="hours-list">
+<div class="hour-row">
+<span>Monday</span>
+<span>8:00 AM – 8:00 PM</span>
+</div>
+<div class="hour-row">
+<span>Tuesday</span>
+<span>8:00 AM – 8:00 PM</span>
+</div>
+<div class="hour-row">
+<span>Wednesday</span>
+<span>8:00 AM – 8:00 PM</span>
+</div>
+<div class="hour-row">
+<span>Thursday</span>
+<span>8:00 AM – 8:00 PM</span>
+</div>
+<div class="hour-row">
+<span>Friday</span>
+<span>8:00 AM – 8:00 PM</span>
+</div>
+<div class="hour-row">
+<span>Saturday</span>
+<span>8:00 AM – 8:00 PM</span>
+</div>
+<div class="hour-row">
+<span>Sunday</span>
+<span>Appointment Only</span>
+</div>
+</div>
+</div>
+<!-- ========================= -->
+<!-- FAQ -->
+<!-- ========================= -->
+<div class="contact-box">
+<h2>❓ Frequently Asked Questions</h2>
+<div class="faq-item">
+<h4>क्या ऑनलाइन बुकिंग उपलब्ध है?</h4>
+<p>हाँ, आप WhatsApp या Call के माध्यम से आसानी से बुकिंग कर सकते हैं।</p>
+</div>
+<div class="faq-item">
+<h4>क्या पंडित जी घर आकर पूजा करते हैं?</h4>
+<p>हाँ, आवश्यकता अनुसार आपके स्थान पर भी पूजा एवं अनुष्ठान किए जाते हैं।</p>
+</div>
+<div class="faq-item">
+<h4>बुकिंग कितने दिन पहले करनी चाहिए?</h4>
+<p>कम से कम 2–7 दिन पहले संपर्क करना बेहतर रहेगा।</p>
+</div>
+</div>
+<!-- ========================= -->
+<!-- EMERGENCY CONTACT -->
+<!-- ========================= -->
+<div class="contact-box emergency-box">
+<h2>🚨 Emergency Booking</h2>
 <p>
-Baglamukhi Havan<br>
-Anushthan<br>
-Spiritual Guidance
+यदि आपको तत्काल पूजा, हवन या धार्मिक परामर्श की आवश्यकता हो,
+तो तुरंत संपर्क करें।
+</p>
+<a href="tel:+919111557553" class="emergency-btn">
+📞 Call Now
+</a>
+<a href="https://wa.me/919111557553" class="emergency-btn whatsapp">
+💬 WhatsApp Now
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- DEVOTEE REVIEWS -->
+<!-- ========================================= -->
+<section class="reviews-section">
+<div class="section-title">
+<span>⭐ Reviews</span>
+<h2>श्रद्धालुओं की प्रतिक्रिया</h2>
+<p>
+हजारों श्रद्धालुओं का विश्वास ही हमारी सबसे बड़ी पहचान है।
 </p>
 </div>
-
-</div>
-
-</section>
-
-
-<h1 style="margin:20px 0;">
-+91 9461469430
-</h1>
-
+<div class="reviews-grid">
+<div class="review-card">
+<div class="stars">★★★★★</div>
 <p>
-
-For Havan Booking, Puja Consultation and Spiritual Guidance, contact directly through phone call or WhatsApp.
-
+"पूजा अत्यंत विधि-विधान से सम्पन्न हुई। पूरा परिवार बहुत संतुष्ट है।"
 </p>
-
-<div class="hero-buttons">
-
-<a href="tel:+919461469430"
-class="call-btn">
-
-Call Now
-
-</a>
-
-<a href="https://wa.me/919461469430"
-class="hero-btn">
-
-WhatsApp Now
-
-</a>
-
+<h4>— Rajesh Sharma</h4>
 </div>
-
-</div>
-
-</section>
-
-<section class="stats">
-
-<div class="stat-box">
-🔱 5000+ Havan
-</div>
-
-<div class="stat-box">
-🙏 All India Devotees
-</div>
-
-<div class="stat-box">
-⭐ 17+ Years Experience
-</div>
-
-<div class="stat-box">
-🛕 Nalkheda Specialist
-</div>
-
-</section>
-
-<section class="seo-section">
-
-<div class="seo-box">
-
-<h2>Why Contact Pandit Hemraj Shastri?</h2>
-
+<div class="review-card">
+<div class="stars">★★★★★</div>
 <p>
-
-✔ Authentic Vedic Rituals<br><br>
-
-✔ Maa Baglamukhi Havan Specialist<br><br>
-
-✔ Guidance Before Booking<br><br>
-
-✔ Online & Offline Havan Booking<br><br>
-
-✔ Trusted By Devotees Across India
-
+"नवग्रह शांति अनुष्ठान बहुत अच्छे से सम्पन्न हुआ। पंडित जी का व्यवहार भी बहुत अच्छा है।"
 </p>
-
+<h4>— Sunita Verma</h4>
 </div>
-
-</section>
-
-<section class="quick-links-section">
-
-<h2>🔱 Explore More 🔱</h2>
-
-<div class="quick-links">
-
-<a href="maa-baglamukhi.html"
-class="quick-btn">
-About Maa
-</a>
-
-<a href="havan.html"
-class="quick-btn">
-Havan Services
-</a>
-
-<a href="nitya-darshan.html"
-class="quick-btn">
-Daily Darshan
-</a>
-
-<a href="blog.html"
-class="quick-btn">
-News & Blog
-</a>
-
-<a href="review.html"
-class="quick-btn">
-Reviews
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>🔱 Pandit Hemraj Shastri 🔱</h3>
-
-<p>Serving Devotees Across India 🇮🇳</p>
-
-<p>📞 +91 9461469430</p>
-
+<div class="review-card">
+<div class="stars">★★★★★</div>
 <p>
-
-<a href="https://wa.me/919461469430">
-WhatsApp Booking
-</a>
-
+"रुद्राभिषेक और गृह प्रवेश दोनों समय पर और पूर्ण वैदिक विधि से सम्पन्न हुए।"
 </p>
-
-<p>© 2026 All Rights Reserved</p>
-
+<h4>— Amit Patel</h4>
+</div>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- FINAL CTA -->
+<!-- ========================================= -->
+<section class="contact-final-cta">
+<div class="cta-box">
+<h2>🙏 आज ही अपनी पूजा बुक करें</h2>
+<p>
+पूजा, हवन, अनुष्ठान एवं धार्मिक परामर्श के लिए अभी संपर्क करें।
+</p>
+<div class="cta-buttons">
+<a href="tel:+919111557553" class="cta-call">
+📞 Call Now
+</a>
+<a href="https://wa.me/919111557553" class="cta-whatsapp">
+💬 WhatsApp
+</a>
+</div>
+</div>
+</section>
+<div class="float-buttons">
+<a href="https://wa.me/9111557553" class="float-btn whatsapp-btn">
+<img src="whatsap.png" alt="">
+</a>
+<a href="tel:+9111557553" class="float-btn call-btn-float">
+<img src="phone.png" alt="">
+</a>
+<a href="#" id="topBtn" class="float-btn top-btn">
+<img src="uparrow.png" alt="">
+</a>
+</div>
+<footer class="footer-glass">
+<div class="footer-container">
+<div class="footer-box">
+<h3>पं. हेमराज शास्त्री</h3>
+<p>माँ बगलामुखी धाम, नलखेड़ा</p>
+<p>वैदिक पूजा, हवन एवं अनुष्ठान</p>
+</div>
+<div class="footer-box">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="maa-baglamukhi.html">Maa Baglamukhi</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-box">
+<h3>Contact</h3>
+<p>📞 +91 9165371880</p>
+<p>📞 +91 9111557553</p>
+<p>📍 Nalkheda, Madhya Pradesh</p>
+<div class="footer-social">
+<a href="#"><img src="facebook.png"></a>
+<a href="#"><img src="instagram.jpg"></a>
+<a href="#"><img src="youtube.png"></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+© 2026 Pandit Hemraj Shastri • Website 2.0
+</div>
 </footer>
-<script>
-
-window.addEventListener("scroll",function(){
-
-const card =
-document.getElementById("panditCard");
-
-if(window.scrollY > 150){
-    card.classList.add("flip");
-}else{
-    card.classList.remove("flip");
-}
-
-});
-
-</script>
-
-<script>
-
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("active");
-}
-
-function book(){
-window.open("https://wa.me/919461469430");
-}
-
-</script>
-
+<script src="nko.js"></script>
 </body>
 </html>
