@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pandit Ji Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+<!-- ========= WEBSITE 2.0 HEADER ========= -->
+<header class="ios-header">
+<div class="ios-logo">
+<img src="panditdp2.png" alt="Pandit Hemraj">
+<div class="logo-text">
+<h3>पं. हेमराज शास्त्री</h3>
+<span>Nalkheda • Madhya Pradesh</span>
+</div>
+</div>
+<nav class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="maa-baglamukhi.html">Maa</a>
+<a href="Nitya-darshan.html">Drashan</a>
+<a href="havan.html">Havan</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+<button id="menuBtn">
+☰
+</button>
+</header>
+<!-- ========================================= -->
+<!-- iPhone Style Popup Menu -->
+<!-- ========================================= -->
+<div id="menuOverlay"></div>
+<div id="iosPopup" class="ios-popup">
+<a href="index.html">🏠 Home</a>
+<a href="about.html">👤 About</a>
+<a href="maa-baglamukhi.html">🛕 Maa Baglamukhi</a>
+<a href="Nitya-darshan.html">🏵️ Drashan</a>
+<a href="havan.html">🔥 Havan</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="contact.html">📞 Contact</a>
+</div>
+<!-- ========= MOBILE MENU ========= -->
+<div id="pageLoader">
+<div class="loaderGlass">
+<img src="icon.jpg" class="loaderLogo">
+</div>
+</div>
+<div class="ios-menu" id="iosMenu">
+<a href="index.html">🏠 Home</a>
+<a href="about.html">👤 About</a>
+<a href="maa-baglamukhi.html">🔱 Maa Baglamukhi</a>
+<a href="Nitya-darshan.html">🏵️ Drashan</a>
+<a href="havan.html">🔥 Havan</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="contact.html">☎ Contact</a>
+</div>
+<!-- ========================================= -->
+<!-- GALLERY HERO START -->
+<!-- ========================================= -->
+<section class="gallery-hero">
+<div class="gallery-overlay"></div>
+<div class="gallery-content">
+<span class="hero-badge">
+📸 Divine Gallery
+</span>
+<h1>
+धार्मिक अनुष्ठानों की<br>
+दिव्य झलकियाँ
+</h1>
+<p>
+माँ बगलामुखी धाम, वैदिक हवन एवं धार्मिक अनुष्ठानों के
+अविस्मरणीय क्षण।
+</p>
+<div class="hero-buttons">
+<a href="#gallery">
+🖼 Gallery देखें
+</a>
+<a href="https://wa.me/9111557553">
+📞 Booking करें
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- GALLERY STATS -->
+<!-- ========================================= -->
+<section class="gallery-stats">
+<div class="stat-card">
+<h2>15+</h2>
+<p>वर्षों का अनुभव</p>
+</div>
+<div class="stat-card">
+<h2>500+</h2>
+<p>संपन्न अनुष्ठान</p>
+</div>
+<div class="stat-card">
+<h2>5000+</h2>
+<p>श्रद्धालु</p>
+</div>
+<div class="stat-card">
+<h2>1000+</h2>
+<p>फोटो एवं वीडियो</p>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- GALLERY FILTER START -->
+<!-- ========================================= -->
+<section class="gallery-filter">
+<div class="filter-wrapper">
+<button class="filter-btn active" data-filter="all">
+All
+</button>
+<button class="filter-btn" data-filter="maa">
+🛕 Maa Baglamukhi
+</button>
+<button class="filter-btn" data-filter="havan">
+🔥 Havan
+</button>
+<button class="filter-btn" data-filter="rudra">
+🔱 Rudrabhishek
+</button>
+<button class="filter-btn" data-filter="temple">
+🏛 Temple
+</button>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- GALLERY FILTER END -->
+<!-- ========================================= -->
+<!-- GALLERY GRID START -->
+<!-- ========================================= -->
+<section class="gallery-section" id="gallery">
+<div class="gallery-grid">
+<!-- Maa Baglamukhi -->
+<div class="gallery-item maa">
+<img src="ma.jpg" alt="Maa Baglamukhi" loading="lazy">
+<div class="gallery-overlay">
+<h3>Maa Baglamukhi</h3>
+<p>Darshan</p>
+</div>
+</div>
+<div class="gallery-item maa">
+<img src="maa.jpg" alt="Maa Baglamukhi" loading="lazy">
+<div class="gallery-overlay">
+<h3>Maa Baglamukhi</h3>
+<p>Temple</p>
+</div>
+</div>
+<!-- Havan -->
+<div class="gallery-item havan">
+<img src="havan11.jpg" alt="Havan" loading="lazy">
+<div class="gallery-overlay">
+<h3>Vedic Havan</h3>
+<p>Anushthan</p>
+</div>
+</div>
+<div class="gallery-item havan">
+<img src="havan4.jpg" alt="Havan" loading="lazy">
+<div class="gallery-overlay">
+<h3>Yagya</h3>
+<p>Havan</p>
+</div>
+</div>
+<!-- Rudrabhishek -->
+<div class="gallery-item rudra">
+<img src="gallery5.jpg" alt="Rudrabhishek" loading="lazy">
+<div class="gallery-overlay">
+<h3>Rudrabhishek</h3>
+<p>Lord Shiva</p>
+</div>
+</div>
+<!-- Temple -->
+<div class="gallery-item temple">
+<img src="tample1.jpg" alt="Temple" loading="lazy">
+<div class="gallery-overlay">
+<h3>Temple</h3>
+<p>Nalkheda</p>
+</div>
+</div>
+<div class="gallery-item temple">
+<img src="tample2.webp" alt="Temple" loading="lazy">
+<div class="gallery-overlay">
+<h3>Mandir</h3>
+<p>Divine</p>
+</div>
+</div>
+<div class="gallery-item temple">
+<img src="mandir2.jpg" alt="Temple" loading="lazy">
+<div class="gallery-overlay">
+<h3>Temple View</h3>
+<p>Spiritual</p>
+</div>
+</div>
+<div class="gallery-item temple">
+<img src="tample3.jpg" alt="Temple" loading="lazy">
+<div class="gallery-overlay">
+<h3>Evening Aarti</h3>
+<p>Temple</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================= -->
+<!-- GALLERY GRID END -->
+<div class="float-buttons">
+<a href="https://wa.me/9111557553" class="float-btn whatsapp-btn">
+<img src="whatsap.png" alt="">
+</a>
+<a href="tel:+9111557553" class="float-btn call-btn-float">
+<img src="phone.png" alt="">
+</a>
+<a href="#" id="topBtn" class="float-btn top-btn">
+<img src="uparrow.png" alt="">
+</a>
+</div>
+<footer class="footer-glass">
+<div class="footer-container">
+<div class="footer-box">
+<h3>पं. हेमराज शास्त्री</h3>
+<p>माँ बगलामुखी धाम, नलखेड़ा</p>
+<p>वैदिक पूजा, हवन एवं अनुष्ठान</p>
+</div>
+<div class="footer-box">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="maa-baglamukhi.html">Maa Baglamukhi</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-box">
+<h3>Contact</h3>
+<p>📞 +91 9165371880</p>
+<p>📞 +91 9111557553</p>
+<p>📍 Nalkheda, Madhya Pradesh</p>
+<div class="footer-social">
+<a href="#"><img src="facebook.png"></a>
+<a href="#"><img src="instagram.jpg"></a>
+<a href="#"><img src="youtube.png"></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+© 2026 Pandit Hemraj Shastri • Website 2.0
+</div>
+</footer>
+<script src="nko.js"></script>
+</body>
+</html>
