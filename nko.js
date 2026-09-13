@@ -89,15 +89,6 @@ if (progress) {
   });
 }
 
-/* ========================================= */
-/* Page Loader */
-/* ========================================= */
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    const loader = document.getElementById("pageLoader");
-    if (loader) loader.classList.add("hide");
-  }, 900);
-});
 
 /* ========================================= */
 /* Ripple Effect on Buttons */
